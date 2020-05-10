@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Pokemon",
+  "version": "1.0",
+
+  "description": "Display Pokemon characters on screen!",
+
+  "icons": {
+    "48": "icons/pokemon.jpg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.mozilla.org/*"],
+      "js": ["pokemon.js"]
+    }
+  ]
+
+}
