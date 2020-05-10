@@ -4,4 +4,4 @@ document.body.style.border = "5px solid blue";
     img.onload = function() {
       div.innerHTML += '<img src="'+img.src+'" />'; 
     };
-    img.src = 'icons/pokemon.png';
+    img.src = 'icons/pikachu.png';
