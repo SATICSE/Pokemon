@@ -17,6 +17,7 @@
   "browser_action": {
     "default_icon": "icons/pokemon.jpg",
     "theme_icons": [{
+        "light": "icons/pokemon.jpg",
         "dark": "icons/pokemon.jpg",
         "size": 32
     }],
