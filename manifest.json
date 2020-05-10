@@ -13,23 +13,6 @@
   "permissions": [
     "activeTab"
   ],
-  
-  "browser_action": {
-    "default_icon": "icons/pokemon.jpg",
-    "theme_icons": [{
-        "light": "icons/pokemon.jpg",
-        "dark": "icons/pokemon.jpg",
-        "size": 32
-    }],
-    "default_title": "Pokemon",
-    "default_popup": "popup/pokemon.html"
-  },
-
-  "web_accessible_resources": [
-    "pokemon/*.jpg",
-    "pokemon/*.png"
-
-  ],
 
   "content_scripts": [
     {
