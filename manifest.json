@@ -7,15 +7,17 @@
   "description": "Display Pokemon characters on screen!",
 
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["pikachu/pika.js"]
   },
   
   "permissions": [
+    "tabs",
     "activeTab"
   ],
 
   "browser_action": {
     "browser_style": true,
+    "default_popup": "pikachu/pikachu.html",
     "default_icon": {
       "16": "icons/pikachu.png",
       "32": "icons/pikachu.png"
@@ -23,7 +25,7 @@
   },
 
   "options_ui": {
-    "page": "pikachu.html",
+    "page": "pikachu/pikachu.html",
     "browser_style": true
   },
 
