@@ -12,7 +12,8 @@
   
   "permissions": [
     "tabs",
-    "activeTab"
+    "activeTab",
+    "storage"
   ],
 
   "browser_action": {
@@ -24,16 +25,23 @@
     }
   },
 
-  "options_ui": {
-    "page": "pikachu/pikachu.html",
-    "browser_style": true
-  },
 
   "content_scripts": [
     {
-      "matches": ["*://*.org/*"],
+      "matches": ["<all_urls>"],
       "js": ["pokemon.js"]
     }
   ]
 
+,
+
+  "options_ui": {
+    "page": "setting/options.html"
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "addon@example.com"
+    }
+  }
 }
