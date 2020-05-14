@@ -6,10 +6,6 @@
 
   "description": "Display Pokemon characters on screen!",
 
-  "background": {
-    "scripts": ["pikachu/pika.js"]
-  },
-  
   "permissions": [
     "tabs",
     "activeTab",
@@ -23,25 +19,6 @@
       "16": "icons/pikachu.png",
       "32": "icons/pikachu.png"
     }
-  },
-
-
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["pokemon.js"]
-    }
-  ]
-
-,
-
-  "options_ui": {
-    "page": "setting/options.html"
-  },
-
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "addon@example.com"
-    }
   }
+
 }
